@@ -1,0 +1,106 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://* http://* 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
+
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Field Survey App</title>
+   <link rel="stylesheet" href="lib/leaflet/leaflet.css" />
+  <style>
+    #map { height: 300px; margin-top: 15px; }
+    body { font-family: Arial, sans-serif; padding: 10px; }
+    button { margin-right: 10px; padding: 10px 15px; }
+    pre { background-color: #f4f4f4; padding: 10px; }
+  </style>
+</head>
+<body>
+  <h2>🗺️ Field Survey App</h2>
+  <button onclick="startSurvey()">Start Survey</button>
+  <button onclick="stopSurvey()">Stop Survey</button>
+  <div id="map"></div>
+  <div id="result"></div>
+
+  <script src="cordova.js"></script>
+  
+
+  <script src="lib/leaflet/leaflet.js"></script>
+  
+ 
+  <script src="lib/turf/turf.min.js"></script>
+
+  
+  <script src="js/index.js"></script>
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://* http://* 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Field Survey App</title>
+  <link rel="stylesheet" href="lib/leaflet/leaflet.css" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 10px;
+      margin: 0;
+      background: #f9f9f9;
+    }
+
+    h2 {
+      margin-bottom: 10px;
+    }
+
+    #map {
+      height: 250px;
+      border-radius: 8px;
+      overflow: hidden;
+      margin-bottom: 10px;
+    }
+
+    button {
+      margin-right: 10px;
+      padding: 10px 20px;
+      font-size: 16px;
+    }
+
+    #result {
+      background-color: #fff;
+      padding: 10px;
+      border-radius: 8px;
+      margin-top: 10px;
+      box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+      max-height: 250px;
+      overflow-y: auto;
+    }
+
+    pre {
+      white-space: pre-wrap;
+      word-wrap: break-word;
+      font-size: 12px;
+      max-height: 150px;
+      overflow-y: auto;
+      background: #f0f0f0;
+      padding: 10px;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+  <h2>🗺️ Field Survey App</h2>
+  <button id="startBtn" onclick="startSurvey()">Start Survey</button>
+  <button id="stopBtn" onclick="stopSurvey()" disabled>Stop Survey</button>
+
+  <div id="map"></div>
+  <div id="result"></div>
+
+  <script src="cordova.js"></script>
+  <script src="lib/leaflet/leaflet.js"></script>
+  <script src="lib/turf/turf.min.js"></script>
+  <script src="js/index.js"></script>
+</body>
+</html>
